@@ -37,6 +37,18 @@ int fib2(int n) {
 	return second;
 }
 
+int fib3(int n) {
+	if (n <= 1) return n;
+	
+	int first = 0;
+	int second = 1;
+	while (n-- > 1) {
+		second += first;
+		first = second - first;
+	}
+	return second;
+}
+
 void test1(int n) {
 	// 汇编指令
 	
@@ -151,6 +163,10 @@ int main(int argc, const char * argv[]) {
 	
 	TimeTool::task("fib2", n,[](int n){
 		cout<<fib2(n)<<endl;
+	});
+	
+	TimeTool::task("fub3",n,[](int n){
+		cout<<fib3(n)<<endl;
 	});
 	
 	return 0;
