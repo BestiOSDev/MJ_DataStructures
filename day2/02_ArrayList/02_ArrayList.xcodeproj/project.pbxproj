@@ -59,9 +59,9 @@
 		24F2468622672E0A00CFE69B /* 02_ArrayList */ = {
 			isa = PBXGroup;
 			children = (
+				24F246942267305A00CFE69B /* Array.hpp */,
 				24F2468F22672E2900CFE69B /* ArrayList.hpp */,
 				24F2469022672E2900CFE69B /* main.cpp */,
-				24F246942267305A00CFE69B /* Array.hpp */,
 			);
 			path = 02_ArrayList;
 			sourceTree = "<group>";

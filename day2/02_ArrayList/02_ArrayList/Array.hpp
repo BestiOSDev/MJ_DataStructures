@@ -65,7 +65,8 @@ public:
 	 * 查看元素的索引
 	 */
 	virtual int indexOf(E element);
-	
+    //打印数组元素
+    virtual void toString();
 };
 
 /**
@@ -139,7 +140,7 @@ void Array<E>::add(int index, E element) {
  */
 template <typename E>
 E Array<E>::remove(int index) {
-	return 0;
+    return NULL;
 }
 /**
  * 查看元素的索引
@@ -149,7 +150,11 @@ int Array<E>::indexOf(E element) {
 	return 0;
 }
 
-
+///打印数组内容
+template <typename E>
+void Array<E>::toString() {
+    
+}
 
 
 #endif /* Array_hpp */
