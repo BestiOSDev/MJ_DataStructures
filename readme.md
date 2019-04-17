@@ -8,3 +8,7 @@ https://ke.qq.com/course/385223#term_id=100459236
 不懂C++语法的 可以学30小时快速精通C++语言 也可以QQ联系作者
 
 https://ke.qq.com/course/336509
+
+
+本人2018年学数据结构时用Objective-C实现版本见 “OC版本数据结构”目录
+
