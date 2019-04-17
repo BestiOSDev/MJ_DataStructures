@@ -31,12 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeLastObject;
 - (void)removeObjectAtIndex:(NSUInteger)index;
 - (void)removeObject:(ObjectType)anObject;
-/**
- 拷贝一个新的数组 使新数组内容 和 原来数组内容一样
- 
- @return ArrayList
- */
-- (ArrayList *) copyNewArray;
+
 @property (readonly) NSUInteger count;
 @property (nullable, nonatomic, readonly) ObjectType firstObject;
 @property (nullable, nonatomic, readonly) ObjectType lastObject;

@@ -212,6 +212,14 @@ typedef void * AnyObject;
 
 }
 
+- (id)copyWithZone:(NSZone *)zone {
+    return self;
+}
+
+- (id)mutableCopyWithZone:(NSZone *)zone {
+    return [self copyNewArray];
+}
+
 /**
  拷贝一个新的数组 使新数组内容 和 原来数组内容一样
  
@@ -252,13 +260,6 @@ typedef void * AnyObject;
 	return string;
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-	return self;
-}
-
-- (id)mutableCopyWithZone:(NSZone *)zone {
-	return self;
-}
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(id __unsafe_unretained _Nullable [_Nonnull])buffer count:(NSUInteger)len {
 	

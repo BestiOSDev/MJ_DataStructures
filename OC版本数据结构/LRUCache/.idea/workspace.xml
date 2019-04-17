@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="35a8f34b-fa26-4c16-9893-43cc6f6ea064" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTFoundation/MTDictionary.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTFoundation/MTDictionary.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTFoundation/MTMutableDictionary.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTFoundation/MTMutableDictionary.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTFoundation/MTSet.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTFoundation/MTSet.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTFoundation/MTArray.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTArray.m" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTFoundation/MTArray.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTMutableArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTFoundation/MTMutableArray.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTMutableArray.m" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/MTFoundation/MTMutableArray.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreFoundation/CoreFoundation/ViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LRUCache/LRUCache.mm" beforeDir="false" afterPath="$PROJECT_DIR$/LRUCache/LRUCache.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LRUCache/main.m" beforeDir="false" afterPath="$PROJECT_DIR$/LRUCache/main.m" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_x86_64" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LRUCache/main.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" selection-start-line="8" selection-end-line="9" />
+              <folding>
+                <element signature="e#118#136#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/LRUCache/LRUCache.mm" />
+        <option value="$PROJECT_DIR$/LRUCache/main.m" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="46" />
+    <option name="y" value="23" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Cidr.FilesView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="LRUCache" type="1d218c8b:XcodeProjectNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="LRUCache" type="1d218c8b:XcodeProjectNode" />
+              <item name="LRUCache" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="LRUCache" type="1d218c8b:XcodeProjectNode" />
+              <item name="Products" type="fcab9f18:XcodeViewNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="LRUCache" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LRUCache" TARGET_NAME="LRUCache" CONFIG_NAME="Debug" SCHEME_NAME="LRUCache" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="LRUCache" RUN_TARGET_NAME="LRUCache" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35a8f34b-fa26-4c16-9893-43cc6f6ea064" name="Default Changelist" comment="" />
+      <created>1554727370684</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554727370684</updated>
+      <workItem from="1554727375217" duration="949000" />
+      <workItem from="1554733452018" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="972000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="46" y="23" width="1400" height="1000" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21806167" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32929516" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32929516" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32929516" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32929516" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/LRUCache/LinkList.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="98" column="40" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LRUCache/LRUCache.mm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LRUCache/main.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
+          <folding>
+            <element signature="e#118#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
