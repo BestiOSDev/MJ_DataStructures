@@ -247,7 +247,7 @@ E LinkedList<E>::remove(int index) {
  */
 template <typename E>
 int LinkedList<E>::indexOf(E element) {
-    LinkedList::Node *cur = m_head->m_element;
+    LinkedList::Node *cur = m_head->m_next;
     for (int i = 0; i<m_size; i++) {
         if (element == cur->m_element) {
             return i;
