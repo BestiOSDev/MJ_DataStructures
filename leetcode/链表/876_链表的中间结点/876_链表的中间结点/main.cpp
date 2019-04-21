@@ -1,20 +1,23 @@
 //
 //  main.cpp
-//  203_linkedlistremove
-// 
+//  83_删除排序链表中的重复元素
+//
 //  Created by dzb on 2019/4/21.
 //  Copyright © 2019年 dzb. All rights reserved.
 //
-///leetcode 203. 移除链表元素  https://leetcode-cn.com/problems/remove-linked-list-elements/
-
+///leetcode 876. 链表的中间结点 https://leetcode-cn.com/problems/middle-of-the-linked-list/
 
 #include <iostream>
 
+///代码提交到leetcode 报错 这是完整代码实现 利用递归去删除元素
 class Solution {
     class ListNode {
         public:
         int val;
         ListNode *next;
+        ~ListNode() {
+            std::cout<<"~ListNode()"<<std::endl;
+        }
         ListNode(int x) : val(x), next(NULL) {}
     };
     public:
@@ -76,33 +79,47 @@ class Solution {
         delete cur; //删除节点 对于节点数据需要开发者自行管理内存
     }
     
-    ListNode* removeElements(ListNode* head, int val) {
+    ListNode* deleteDuplicates(ListNode* head) {
         
-        int idx = indexOf(val);
-        if (idx == -1) {
+        if (head->next == NULL) {
             return m_head;
-        } else {
-            remove(idx);
+        }
+        ListNode *pre = head;
+        ListNode *cur = pre->next;
+        if (cur == NULL || pre == NULL) {
+            return m_head;
         }
         
-        return removeElements(m_head,val);
+        std::cout<<"pre = " << pre->val << "cur = " << cur->val << std::endl;
+        
+        if (pre->val == cur->val) { //元素重复
+            pre->next = cur->next;
+            delete cur;
+            m_head = pre;
+        } else {
+            m_head = cur;
+        }
+        
+        return deleteDuplicates(m_head);
     }
+    
+    
+    
 };
 
 int main(int argc, const char * argv[]) {
-  
     Solution *list = new Solution();
     list->add(1);
     list->add(2);
-    list->add(6);
+    list->add(2);
     list->add(3);
+    list->add(4);
     list->add(4);
     list->add(5);
     list->add(6);
-
-    list->removeElements(list->m_head,6);
+    list->add(6);
+    list->deleteDuplicates(list->m_head);
     
     delete list;
-    
     return 0;
 }
