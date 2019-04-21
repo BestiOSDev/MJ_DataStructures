@@ -6,6 +6,11 @@
 在学习过程中遇到代码有问题 加本人QQ1060545231 或者提交 issues
 
 
+- day1-[动态数组、ArrayList自实现及源码分析](https://ke.qq.com/webcourse/index.html#cid=385223&term_id=100459236&taid=3115410363113671&type=1024&vid=h1431oszhbq)
+- day2-[单向链表、双向链表、LinkedList自实现及源码分析](https://ke.qq.com/webcourse/index.html#cid=385223&term_id=100459236&taid=3115414658080967&type=1024&vid=g1431fgbryz)
+- day3-[双向循环链表]()
+
+
 小码哥恋上数据结构第一季
 https://ke.qq.com/course/385223#term_id=100459236
 
