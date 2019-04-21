@@ -1,15 +1,18 @@
 
-原汁原味对课堂代码用C/C++实现 根据情况有些代码会用Objective-C编写 适合iOS开发者学习交流 
 
-只对小码哥上传在腾讯课堂上的代码 用C++实现 建议购买官方课程 不提供任何PPT和学习资料
+## 课程源码目录 
 
-在学习过程中遇到代码有问题 加本人QQ1060545231 或者提交 issues
+| **第一章 线性表 ** | [无代码] | 
+| :--- | :---: | 
+| day-1 复杂度,静态数组 | [C++](day1/02_ArrayList) 
+| day-2 动态数组、ArrayList自实现及源码分析 | [C++](day2/02_ArrayList) |
+| day-3 单向链表、双向链表、LinkedList自实现及源码分析 | [C++](day3/LinkedList)
+| day-4 单向循环链表、双向循环链表、静态链表 | [无代码] |
 
 
-- day1-[动态数组、ArrayList自实现及源码分析](https://ke.qq.com/webcourse/index.html#cid=385223&term_id=100459236&taid=3115410363113671&type=1024&vid=h1431oszhbq)
-- day2-[单向链表、双向链表、LinkedList自实现及源码分析](https://ke.qq.com/webcourse/index.html#cid=385223&term_id=100459236&taid=3115414658080967&type=1024&vid=g1431fgbryz)
-- day3-[双向循环链表]()
+---
 
+在学习过程中遇到代码有问题 加本人QQ[1060545231]() 或者提交 issues
 
 小码哥恋上数据结构第一季
 https://ke.qq.com/course/385223#term_id=100459236
@@ -18,5 +21,4 @@ https://ke.qq.com/course/385223#term_id=100459236
 
 https://ke.qq.com/course/336509
 
-本人2018年学数据结构时用Objective-C实现版本见 “OC版本数据结构”目录
-
+**大家加油！：）**
