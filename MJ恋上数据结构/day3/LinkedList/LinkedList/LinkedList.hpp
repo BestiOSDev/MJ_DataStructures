@@ -40,11 +40,6 @@ public:
     //析构方法
     ~LinkedList();
     /**
-     * 清除所有元素
-     */
-    void clear();
-    
-    /**
      * 元素的数量
      */
     int size();
@@ -131,16 +126,8 @@ LinkedList<E>::LinkedList() {
 template <typename E>
 LinkedList<E>::~LinkedList() {
     cout<<"~LinkedList()"<<endl;
-}
-
-
-/**
- * 清除所有元素
- */
-template <typename E>
-void LinkedList<E>::clear() {
-    m_size = 0;
-    m_head = nullptr;
+	//需要开发者自己调用 clear_with_completion 在销毁 linklist之前
+	this->clear_with_completion(NULL);
 }
 
 /**
@@ -204,18 +191,18 @@ E LinkedList<E>::set(int index, E element) {
  */
 template <typename E>
 void LinkedList<E>::add(int index, E element) {
-    rangeCheckForAdd(index);
-    if (index == 0) {
-        LinkedList::Node *pFind = node(index);
-        LinkedList::Node *cur = new LinkedList::Node(element,pFind);
-        m_head->m_next = cur;
-    } else {
-        //待添加节点的前一个节点
-        LinkedList::Node *pre = node(index-1);
-        LinkedList::Node *cur = new LinkedList::Node(element,pre->m_next);
-        pre->m_next = cur;
-    }
-    m_size++;
+	rangeCheckForAdd(index);
+	if (index == 0) {
+		LinkedList::Node *pFind = node(index);
+		LinkedList::Node *cur = new LinkedList::Node(element,pFind);
+		m_head->m_next = cur;
+	} else {
+		//待添加节点的前一个节点
+		LinkedList::Node *pre = node(index-1);
+		LinkedList::Node *cur = new LinkedList::Node(element,pre->m_next);
+		pre->m_next = cur;
+	}
+	m_size++;
 }
 
 /**
@@ -223,23 +210,23 @@ void LinkedList<E>::add(int index, E element) {
  */
 template <typename E>
 E LinkedList<E>::remove(int index) {
-    rangeCheck(index);
-    E element; //要删除的元素
-    LinkedList::Node *cur = NULL; //要删除的节点
-    if (index == 0) {
-        cur = node(index);
-        m_head->m_next = cur->m_next;
-        element = cur->m_element;
-    } else {
-        ///待删除节点前一个节点
-        LinkedList::Node *pre = node(index-1);
-        cur = pre->m_next;
-        element = cur->m_element;
-        pre->m_next = cur->m_next;
-    }
-    m_size--;
-    delete cur; //删除节点 对于节点数据需要开发者自行管理内存
-    return element;
+	rangeCheck(index);
+	E element; //要删除的元素
+	LinkedList::Node *cur = NULL; //要删除的节点
+	if (index == 0) {
+		cur = node(index);
+		m_head->m_next = cur->m_next;
+		element = cur->m_element;
+	} else {
+		///待删除节点前一个节点
+		LinkedList::Node *pre = node(index-1);
+		cur = pre->m_next;
+		element = cur->m_element;
+		pre->m_next = cur->m_next;
+	}
+	m_size--;
+	delete cur; //删除节点 对于节点数据需要开发者自行管理内存
+	return element;
 }
 
 /**
@@ -247,6 +234,7 @@ E LinkedList<E>::remove(int index) {
  */
 template <typename E>
 int LinkedList<E>::indexOf(E element) {
+<<<<<<< HEAD
     LinkedList::Node *cur = m_head->m_next;
     for (int i = 0; i<m_size; i++) {
         if (element == cur->m_element) {
@@ -255,6 +243,16 @@ int LinkedList<E>::indexOf(E element) {
         cur = cur->m_next;
     }
     return ELEMENT_NOT_FOUND;
+=======
+	LinkedList::Node *cur = m_head->m_next;
+	for (int i = 0; i<m_size; i++) {
+		if (element == cur->m_element) {
+			return i;
+		}
+		cur = cur->m_next;
+	}
+	return ELEMENT_NOT_FOUND;
+>>>>>>> ef5f58c4b53a448083094cee7ed606c715aa0e53
 }
 
 ///遍历所有元素
@@ -272,27 +270,27 @@ void LinkedList<E>::for_each_elements(void(*for_each)(E)) {
 ///销毁链表的元素
 template <typename E>
 void LinkedList<E>::clear_with_completion(void(*for_each)(E)) {
-    if (size() == 0) return;
-    while (m_size > 0) {
-        E old = remove(m_size-1);
-        if (for_each != NULL) {
-            (*for_each)(old);
-        }
-    }
+	if (size() == 0) return;
+	while (m_size > 0) {
+		E old = remove(m_size-1);
+		if (for_each != NULL) {
+			(*for_each)(old);
+		}
+	}
 }
 
 //打印元素
 template <typename E>
 void LinkedList<E>::toString() {
-    std::cout << "[ ";
-    for (int i = 0; i<m_size;i++) {
-        if (i != 0) {
-            cout << ",";
-        }
-        E element = get(i);
-        cout<<element;
-    }
-    cout<<" ]"<<endl;
+	std::cout << "[ ";
+	for (int i = 0; i<m_size;i++) {
+		if (i != 0) {
+			cout << ",";
+		}
+		E element = get(i);
+		cout<<element;
+	}
+	cout<<" ]"<<endl;
 }
 
 #endif /* LinkedList_hpp */
