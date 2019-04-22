@@ -204,6 +204,7 @@ E LinkedList<E>::set(int index, E element) {
 template <typename E>
 void LinkedList<E>::add(int index, E element) {
 	rangeCheckForAdd(index);
+	//把双向循环链表 想象成汉堡包🍔 就不难立即 add 方法怎么实现
 	LinkedList::Node *cur = new LinkedList::Node();
 	cur->m_element = element;
 	cur->m_next = _header->m_next;
