@@ -78,47 +78,47 @@ class Solution {
         m_size--;
         delete cur; //删除节点 对于节点数据需要开发者自行管理内存
     }
+	
+	int listlen(ListNode *head) {
+		
+		int length = 0;
+		Solution::ListNode *cur = head->next;
+		while (cur != NULL) {
+			cur = cur->next;
+			length++;
+		}
+		
+		return length;
+	}
     
-    ListNode* deleteDuplicates(ListNode* head) {
-        
-        if (head->next == NULL) {
-            return m_head;
-        }
-        ListNode *pre = head;
-        ListNode *cur = pre->next;
-        if (cur == NULL || pre == NULL) {
-            return m_head;
-        }
-        
-        std::cout<<"pre = " << pre->val << "cur = " << cur->val << std::endl;
-        
-        if (pre->val == cur->val) { //元素重复
-            pre->next = cur->next;
-            delete cur;
-            m_head = pre;
-        } else {
-            m_head = cur;
-        }
-        
-        return deleteDuplicates(m_head);
+    ListNode* middleNode(ListNode* head) {
+		
+		int length = listlen(head);
+		if (length == 1) {
+			return head->next;
+		} else {
+			int middle = length/2 + 1;
+			Solution::ListNode * middlenode = node(middle-1);
+			return middlenode;
+		}
     }
     
-    
-    
+	
 };
 
 int main(int argc, const char * argv[]) {
     Solution *list = new Solution();
     list->add(1);
     list->add(2);
-    list->add(2);
     list->add(3);
-    list->add(4);
     list->add(4);
     list->add(5);
     list->add(6);
-    list->add(6);
-    list->deleteDuplicates(list->m_head);
+    list->add(7);
+    list->add(8);
+    list->add(9);
+	list->add(10);
+    list->middleNode(list->m_head);
     
     delete list;
     return 0;
