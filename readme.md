@@ -8,7 +8,8 @@
 | day-2 动态数组、ArrayList自实现及源码分析 | [C++](MJ恋上数据结构/day2/02_ArrayList) |
 | day-3 单向链表、双向链表、LinkedList自实现及源码分析 | [C++](MJ恋上数据结构/day3/LinkedList)
 | day-4 单向循环链表、双向循环链表、静态链表 | [C++](MJ恋上数据结构/day4/LinkedList) |
-
+| day-5 栈、Stack自实现及源码分析 | [C++](MJ恋上数据结构/day5/02-Array-Stack) |
+| day-6 队列、循环队列  | [C++](MJ恋上数据结构/day6/LinkedList)|
 
 ---
 
