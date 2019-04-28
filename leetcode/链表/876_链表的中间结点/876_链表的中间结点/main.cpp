@@ -90,18 +90,37 @@ class Solution {
 		
 		return length;
 	}
-    
-    ListNode* middleNode(ListNode* head) {
-		
-		int length = listlen(head);
-		if (length == 1) {
-			return head->next;
-		} else {
-			int middle = length/2 + 1;
-			Solution::ListNode * middlenode = node(middle-1);
-			return middlenode;
+	
+	ListNode *node1(ListNode* head,int index) {
+		ListNode *pFind = head->next;
+		for (int i = 0; i<index; i++) {
+			pFind = pFind->next;
 		}
+		return pFind;
+	}
+	
+    ListNode* middleNode(ListNode* head) {
+		ListNode* slow = head;
+		ListNode* fast = head;
+		while (fast != NULL && fast->next != NULL) {
+			slow = slow->next;
+			fast = fast->next->next;
+		}
+		return slow;
     }
+	
+	
+	ListNode* removeElements(ListNode* head, int val) {
+		
+		int idx = indexOf(val);
+		if (idx == -1) {
+			return m_head;
+		} else {
+			remove(idx);
+		}
+		
+		return removeElements(m_head,val);
+	}
     
 	
 };
@@ -113,11 +132,11 @@ int main(int argc, const char * argv[]) {
     list->add(3);
     list->add(4);
     list->add(5);
-    list->add(6);
-    list->add(7);
-    list->add(8);
-    list->add(9);
-	list->add(10);
+//    list->add(6);
+//    list->add(7);
+//    list->add(8);
+//    list->add(9);
+//	list->add(10);
     list->middleNode(list->m_head);
     
     delete list;
